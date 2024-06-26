@@ -1,0 +1,44 @@
+Thu Aug 31 19:39:55 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 515.65.01    Driver Version: 515.65.01    CUDA Version: 11.7     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A100-PCI...  On   | 00000000:21:00.0 Off |                    0 |
+| N/A   31C    P0    35W / 250W |   4165MiB / 40960MiB |      0%      Default |
+|                               |                      |             Disabled |
++-------------------------------+----------------------+----------------------+
+|   1  NVIDIA A100-PCI...  On   | 00000000:81:00.0 Off |                    0 |
+| N/A   27C    P0    32W / 250W |      0MiB / 40960MiB |      0%      Default |
+|                               |                      |             Disabled |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
++-----------------------------------------------------------------------------+
+/home/people/22200968/pyenv/lib/python3.8/site-packages/torch/nn/modules/rnn.py:67: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.5 and num_layers=1
+  warnings.warn("dropout option adds dropout after all but last "
+PyTorch Version : 1.13.1
+cuda
+New_stand_alone.pt
+***** Best Result Updated at Epoch 1, Val Loss: 0.2262 *****
+Epoch [1/10], Time: 4.96s, Train Loss: 0.3129, Train Acc: 0.5849, Train F1 Macro: 0.4402, Train F1 Micro: 0.5849, Val Loss: 0.2262, Val Acc: 0.7107, Val F1 Macro: 0.5578, Val F1 Micro: 0.7107
+***** Best Result Updated at Epoch 2, Val Loss: 0.2003 *****
+Epoch [2/10], Time: 4.18s, Train Loss: 0.2242, Train Acc: 0.7131, Train F1 Macro: 0.5440, Train F1 Micro: 0.6490, Val Loss: 0.2003, Val Acc: 0.7464, Val F1 Macro: 0.6353, Val F1 Micro: 0.7285
+***** Best Result Updated at Epoch 3, Val Loss: 0.1927 *****
+Epoch [3/10], Time: 4.22s, Train Loss: 0.1915, Train Acc: 0.7685, Train F1 Macro: 0.6039, Train F1 Micro: 0.6888, Val Loss: 0.1927, Val Acc: 0.7647, Val F1 Macro: 0.6570, Val F1 Micro: 0.7406
+***** Best Result Updated at Epoch 4, Val Loss: 0.1902 *****
+Epoch [4/10], Time: 4.26s, Train Loss: 0.1638, Train Acc: 0.8114, Train F1 Macro: 0.6463, Train F1 Micro: 0.7195, Val Loss: 0.1902, Val Acc: 0.7676, Val F1 Macro: 0.6706, Val F1 Micro: 0.7473
+Epoch [5/10], Time: 3.86s, Train Loss: 0.1355, Train Acc: 0.8477, Train F1 Macro: 0.6802, Train F1 Micro: 0.7451, Val Loss: 0.2003, Val Acc: 0.7666, Val F1 Macro: 0.6787, Val F1 Micro: 0.7512
+Epoch [6/10], Time: 3.87s, Train Loss: 0.1110, Train Acc: 0.8866, Train F1 Macro: 0.7109, Train F1 Micro: 0.7687, Val Loss: 0.2064, Val Acc: 0.7743, Val F1 Macro: 0.6859, Val F1 Micro: 0.7551
+Epoch [7/10], Time: 3.89s, Train Loss: 0.0873, Train Acc: 0.9216, Train F1 Macro: 0.7389, Train F1 Micro: 0.7905, Val Loss: 0.2209, Val Acc: 0.7772, Val F1 Macro: 0.6909, Val F1 Micro: 0.7582
+Epoch [8/10], Time: 3.93s, Train Loss: 0.0687, Train Acc: 0.9448, Train F1 Macro: 0.7640, Train F1 Micro: 0.8098, Val Loss: 0.2313, Val Acc: 0.7743, Val F1 Macro: 0.6932, Val F1 Micro: 0.7602
+Epoch [9/10], Time: 3.93s, Train Loss: 0.0529, Train Acc: 0.9610, Train F1 Macro: 0.7855, Train F1 Micro: 0.8266, Val Loss: 0.2450, Val Acc: 0.7743, Val F1 Macro: 0.6960, Val F1 Micro: 0.7618
+Epoch [10/10], Time: 3.96s, Train Loss: 0.0429, Train Acc: 0.9723, Train F1 Macro: 0.8042, Train F1 Micro: 0.8412, Val Loss: 0.2689, Val Acc: 0.7724, Val F1 Macro: 0.6983, Val F1 Micro: 0.7629
+Total Training Time: 41.06s
+Test Loss: 0.1981, Test Acc: 0.7592, Test F1 Macro: 0.6952, Test F1 Micro: 0.7592
