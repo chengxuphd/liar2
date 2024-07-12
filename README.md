@@ -1,5 +1,7 @@
 # LIAR2 Benchmark
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/an-enhanced-fake-news-detection-system-with/fact-checking-on-liar2)](https://paperswithcode.com/sota/fact-checking-on-liar2?p=an-enhanced-fake-news-detection-system-with)
+
 The [LIAR](https://doi.org/10.18653/v1/P17-2067) dataset has been widely followed by fake news detection researchers since its release, and along with a great deal of research, the community has provided a variety of feedback on the dataset to improve it. We adopted these feedbacks and released the LIAR2 dataset, a new benchmark dataset of ~23k manually labeled by professional fact-checkers for fake news detection tasks. We have used a split ratio of 8:1:1 to distinguish between the training set, the test set, and the validation set, details of which are provided in the paper of "[An Enhanced Fake News Detection System With Fuzzy Deep Learning](https://doi.org/10.1109/ACCESS.2024.3418340)". The LIAR2 dataset can be accessed at [`./liar2`](./liar2), and statistical information for LIAR and LIAR2 is provided in the table below: 
 
 
