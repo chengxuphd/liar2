@@ -2,7 +2,7 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/an-enhanced-fake-news-detection-system-with/fact-checking-on-liar2)](https://paperswithcode.com/sota/fact-checking-on-liar2?p=an-enhanced-fake-news-detection-system-with)
 
-The [LIAR](https://doi.org/10.18653/v1/P17-2067) dataset has been widely followed by fake news detection researchers since its release, and along with a great deal of research, the community has provided a variety of feedback on the dataset to improve it. We adopted these feedbacks and released the LIAR2 dataset, a new benchmark dataset of ~23k manually labeled by professional fact-checkers for fake news detection tasks. We have used a split ratio of 8:1:1 to distinguish between the training set, the test set, and the validation set, details of which are provided in the paper of "[An Enhanced Fake News Detection System With Fuzzy Deep Learning](https://doi.org/10.1109/ACCESS.2024.3418340)". The LIAR2 dataset can be accessed at [`./liar2`](./liar2), and statistical information for LIAR and LIAR2 is provided in the table below: 
+The [LIAR](https://doi.org/10.18653/v1/P17-2067) dataset has been widely followed by fake news detection researchers since its release, and along with a great deal of research, the community has provided a variety of feedback on the dataset to improve it. We adopted these feedbacks and released the LIAR2 dataset, a new benchmark dataset of ~23k manually labeled by professional fact-checkers for fake news detection tasks. We have used a split ratio of 8:1:1 to distinguish between the training set, the test set, and the validation set, details of which are provided in the paper of "[An Enhanced Fake News Detection System With Fuzzy Deep Learning](https://doi.org/10.1109/ACCESS.2024.3418340)". The LIAR2 dataset can be accessed at [`./liar2`](./liar2) and [Huggingface](https://huggingface.co/datasets/chengxuphd/liar2), and statistical information for LIAR and LIAR2 is provided in the table below: 
 
 
 | **Statistics**                               | **LIAR** | **LIAR2** |
@@ -76,6 +76,19 @@ The LIAR2 dataset is an upgrade of the LIAR dataset, which inherits the ideas of
 | Context                | 0.3361       | 0.2682       | 0.3391       | 0.3458       | 0.2560       | 0.3458       | 0.3152 |
 | Justification          | 0.6017       | 0.5578       | 0.5796       | 0.6176       | 0.6026       | 0.6176       | 0.5962 |
 | All                    | **0.6974**   | **0.6570**   | **0.6676**   | **0.7021**   | **0.6961**   | **0.7021**   | **0.6871**|
+
+## Example Usage
+
+You can load each of the subset as follows:
+
+```python
+import datasets
+dataset = "chengxuphd/liar2"
+dataset = datasets.load_dataset(dataset)
+statement_train, y_train = dataset["train"]["statement"], dataset["train"]["label"]
+statement_val, y_train = dataset["validation"]["statement"], dataset["validation"]["label"]
+statement_test, y_test = dataset["test"]["statement"], dataset["test"]["label"]
+```
 
 ## Citation
 
