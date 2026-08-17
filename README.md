@@ -1,3 +1,5 @@
+
+
 # LIAR2 Benchmark
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/an-enhanced-fake-news-detection-system-with/fact-checking-on-liar2)](https://paperswithcode.com/sota/fact-checking-on-liar2?p=an-enhanced-fake-news-detection-system-with)
@@ -86,7 +88,7 @@ import datasets
 dataset = "chengxuphd/liar2"
 dataset = datasets.load_dataset(dataset)
 statement_train, y_train = dataset["train"]["statement"], dataset["train"]["label"]
-statement_val, y_train = dataset["validation"]["statement"], dataset["validation"]["label"]
+statement_val, y_val = dataset["validation"]["statement"], dataset["validation"]["label"]
 statement_test, y_test = dataset["test"]["statement"], dataset["test"]["label"]
 ```
 
